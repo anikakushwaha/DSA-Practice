@@ -11,7 +11,6 @@ int partition(int arr[],int s, int e){
     }
     int pivotindex = s + count;
     swap(arr[s],arr[pivotindex]);
-    //left and right wala part
     int i = s;
     int j = e;
     while(i<pivotindex && j>pivotindex){
@@ -34,9 +33,9 @@ void quicksort(int *arr, int s, int e){
         return ;
     }
     int p = partition(arr,s,e);
-    //left wala part sort
+    //left part sort
     quicksort(arr,s,p-1);
-    //right wala part sort
+    //right part sort
     quicksort(arr,p+1,e);
 }
 int main(){

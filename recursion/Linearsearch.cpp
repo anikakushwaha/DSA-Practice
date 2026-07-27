@@ -11,7 +11,6 @@ bool linearsearch(int arr[],int n,int key){
         bool remainpart=linearsearch(arr+1,n-1,key);
         return remainpart;
     }
-
 }
 int main(){
     int arr[5] = {3,5,1,2,6};
